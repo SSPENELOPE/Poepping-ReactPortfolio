@@ -131,6 +131,12 @@ main {
   overflow: hidden;
   margin: 2em;
   padding: 3px;
+  height: 70vh;
+}
+
+.self-portrait {
+  height: 700px;
+  width: 550px;
 }
 
 .about-header {
@@ -141,7 +147,7 @@ main {
 
 .biography-text {
   color: var(--light) !important;
-  font-size: 22px;
+  font-size: 30px;
   padding: 10px;
 }
 
