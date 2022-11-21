@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import AboutMe from './AboutMe';
+import MyProjects from './MyProjects';
 
 function Header() {
 
+    const [body, setBody] = useState(<AboutMe />)
     return (
         <div>
             <header>
                 <h1>Tyler Poepping</h1>
                 <nav>
-                    <a href="#about-me">About Me</a>
-                    <a href="#my-projects">My Projects</a>
-                    <a href="#contact-me">Contact Me</a>
-                    <a href="./assets/Poepping-Resume.docx">Resume</a>
+                    <button className="navlink" onClick={() => setBody(<AboutMe />)}>About Me</button>
+                    <button className="navlink" onClick={() => setBody(<MyProjects />)}>My Projects</button>
+                    <button className="navlink">Contact Me</button>
+                    <button className="navlink">Resume</button>
                 </nav>
             </header>
 
             <section className="banner">
-                <h1 class="banner-text">Veteran and Junior Developer</h1>
+                <h1 className="banner-text">Veteran and Junior Developer</h1>
             </section>
+            <div>
+                {body}
+            </div>
         </div>
     )
 }
