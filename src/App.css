@@ -1,0 +1,440 @@
+/**  global  **/
+:root {
+  --light: #fff;
+  --dark: black;
+  --secondary: darkslategray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+}
+
+
+/**  Header/Navbar  **/
+ header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url(./assets/images/brick.jpg);
+    background-size: cover;
+    padding: 1.5em;
+    width: 100vw;
+    position: fixed;
+    z-index: 9999;
+  }
+
+   header h1 {
+    margin-bottom: 5px;
+    margin-right: 3em;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 15px 2em 15px 2em;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.0;
+  }
+
+
+   nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+   nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 2em;
+    margin: 3px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    transition: .2s;
+  }
+
+  nav a::after {
+    content: '';
+    width: 80%;
+    height: .1rem;
+    left: 100%;
+    position: absolute;
+    background-color: red;
+    transition: .4s ease-in;
+    bottom: 0;
+  }
+
+  nav a:hover::before {
+    left: 100%;
+  }
+
+  nav a:hover::after {
+    left: 0;
+  }
+
+
+
+  /** Banner **/
+.banner {
+    background: url("./assets/images/1500x500-American-Flag-Twitter-Header0028.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    }
+
+.banner-text {
+    background-color: black;
+    color: var(--light);
+    margin: 23px;
+    padding: 10px;
+}
+
+section img {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/** Portfolio Contents **/
+
+main {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  text-align: center;
+  overflow: hidden;
+  margin: 2em;
+  padding: 3px;
+}
+
+.about-header {
+  color: var(--dark);
+  font-size: 50px;
+  text-align: center;
+}
+
+.biography-text {
+  color: var(--light) !important;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.wrapper div {
+  flex: 1 1 75%;
+}
+
+.wrapper h2 {
+  color: var(--secondary) !important;
+  font-size: 45px;
+  font-weight: bolder;
+  border-right: 5px solid var(--light);
+  flex: 1 1 25%;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container h3 {
+  background-color: darkslategrey;
+  padding: 8px 12px;
+}
+
+.work-box {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  color: var(--light);
+  border: 8px solid darkslategrey;
+  min-width: 200px;
+  min-height: 250px;
+  flex-basis: calc(50% - 1em);
+  padding-bottom: 2em;
+  margin: .5em;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+/**  Contact Me Section  **/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+
+.contact ul li {
+  display: inline-block; 
+  padding: -15px; 
+}
+
+.contact a {
+  color: var(--light);
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: open;
+  padding-right: 2em;
+  margin: 3px;
+  position: relative;
+  transition: .2s;
+  overflow: hidden;
+}
+
+.contact a::after {
+  content: '';
+  width: 85%;
+  height: .1rem;
+  left: 100%;
+  position: absolute;
+  background-color: red;
+  transition: .4s ease-in;
+  bottom: 0;
+}
+
+.contact a:hover::after {
+  left: 0;
+}
+
+
+/* Images and hover elements*/
+
+.tribute {
+  background: url(./assets/images/tributepage.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+}
+
+.tribute:hover {
+  background: url(./assets/images/tributepage.png);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 5px 5px 5px var(--light);
+  opacity: 1.0;
+}
+
+.survey {
+  background: url(./assets/images/surveypage.png);
+  opacity: 0.4;
+  background-size: cover;
+  background-position: center;
+}
+
+.survey:hover {
+  background: url(./assets/images/surveypage.png);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 5px 5px 5px var(--light);
+  opacity: 1.0;
+}
+
+.beard {
+  background: url(./assets/images/beard.png);
+  opacity: 0.4;
+  background-size: cover;
+  background-position: center;
+}
+
+.beard:hover {
+  background: url(./assets/images/beard.png);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 5px 5px 5px var(--light);
+  opacity: 1.0;
+}
+
+.coming-soon {
+  background: url(./assets/images/coming-soon.webp);
+  background-position: center;
+  opacity: 0.4;
+}
+
+.coming-soon:hover {
+  content: '';
+  background: url(./assets/images/coming-soon.webp);
+  background-size: cover;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 5px 5px 5px var(--light);
+  opacity: 1.0;
+}
+
+.coming-soon2 {
+  background: url(./assets/images/coming-soon.webp);
+  background-position: center;
+  opacity: 0.4;
+}
+
+.coming-soon2:hover {
+  content: '';
+  background: url(./assets/images/coming-soon.webp);
+  background-size: cover;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 5px 5px 5px var(--light);
+  opacity: 1.0;
+}
+
+.coming-soon3 {
+  background: url(./assets/images/coming-soon.webp);
+  background-position: center;
+  opacity: 0.4;
+}
+
+.coming-soon3:hover {
+  content: '';
+  background: url(./assets/images/coming-soon.webp);
+  background-size: cover;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 5px 5px 5px var(--light);
+  opacity: 1.0;
+}
+.work-box:first-child {
+  flex-basis: 100%;
+  min-height: 450px;
+}
+
+
+/* Media querries */
+
+/** Tablets **/
+@media screen and (max-width: 892px) {
+  .wrapper,
+  .container {
+    flex-direction: column;
+  }
+  .wrapper h2 {
+    border-bottom: 5px solid var(--light);
+    border-right: none;
+  }
+  .work-box,
+  .work-box:first-child {
+    max-width: 500px;
+    min-height: 250px;
+  }
+
+}
+
+/** Tablets **/
+@media screen and (max-width: 860px) {
+  nav, 
+  nav a,
+  header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header {
+    max-height: 275px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  .banner-text {
+    font-size: 10px;
+  }
+
+  .biography,
+  .biography-text {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .contact a {
+    font-size: 15px;
+  }
+
+  .contact a {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container img {
+    margin: 20px;
+  }
+}
+
+/** Small Devices **/
+@media screen and (max-width: 480px) {
+   nav,
+   nav a,
+   header, 
+   header h1 {
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+   }
+
+   .container img {
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+   }
+
+   .biography,
+   .biography-text {
+    font-size: 10px;
+    text-align: left;
+   }
+   
+   main {
+    width: 90vw;
+   }
+
+   .wrapper h2 {
+    font-size: 25px;
+   }
+
+   .contact a {
+    font-size: 10px;
+   }
+
+   .work-box,
+   .work-box:first-child {
+     min-width: 230px;
+     min-height: 120px;
+   }
+ }
+  
+
+
