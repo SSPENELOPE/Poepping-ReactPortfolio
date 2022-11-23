@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+.break {
+  margin-top: 10em;
+}
+
 body {
     background-color: black;
     background-size: cover;
@@ -128,7 +132,6 @@ main {
   align-items: stretch;
   justify-content: space-between;
   text-align: center;
-  overflow: hidden;
   margin: 2em;
   padding: 3px;
   height: 70vh;
