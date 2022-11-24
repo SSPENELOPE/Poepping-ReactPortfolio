@@ -6,6 +6,7 @@ import ContactMe from "./ContactMe";
 
 function Navigation() {
     const [body, setBody] = useState(<AboutMe />)
+
     return (
         <div>
             <header>
@@ -14,7 +15,7 @@ function Navigation() {
                     <button className="navlink" onClick={() => setBody(<AboutMe />)}>About Me</button>
                     <button className="navlink" onClick={() => setBody(<MyProjects />)}>My Projects</button>
                     <button className="navlink" onClick={() => setBody(<ContactMe />)}>Contact Me</button>
-                    <button className="navlink">Resume</button>
+                    <a href="./assets/Poepping-Resume" className="navlink">Resume</a>
                 </nav>
             </header>
             <Header body={body} />
