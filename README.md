@@ -9,6 +9,8 @@
 - You can use and view my portfolio at (https://sspenelope.github.io/react-portfolio/) 
 - If you click the resume portion at the top of my portfolio the resume will be downloaded until I add an option to ask if you would like to download it first
 
+![alt text](./src/assets/images/webpage-screenshot.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
